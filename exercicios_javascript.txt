@@ -1,0 +1,177 @@
+let valor = Number(prompt("Digite o valor:"));
+let desconto = valor * 0.15;
+let total = valor - desconto;
+
+alert("Valor final: R$ " + total.toFixed(2));
+
+
+let numero1 = Number(prompt("Digite o primeiro número:"));
+let numero2 = Number(prompt("Digite o segundo número:"));
+let resultado = numero1 / numero2;
+
+alert("Resultado da divisão: " + resultado);
+
+
+let idade = Number(prompt("Digite sua idade:"));
+let dias = idade * 365;
+
+alert("Você viveu aproximadamente " + dias + " dias.");
+
+
+let distancia = Number(prompt("Digite a distância percorrida em km:"));
+let litros = Number(prompt("Digite os litros gastos:"));
+let media = distancia / litros;
+
+alert("Consumo médio: " + media.toFixed(2) + " km/l");
+
+
+
+
+let letra = prompt("Digite uma letra:").toLowerCase();
+
+if ("aeiou".includes(letra) && letra.length === 1) {
+    alert("É uma vogal!");
+} else {
+    alert("É uma consoante!");
+}
+
+
+let numero = Number(prompt("Digite um número de 1 a 7:"));
+
+switch (numero) {
+    case 1:
+        alert("Domingo");
+        break;
+    case 2:
+        alert("Segunda-feira");
+        break;
+    case 3:
+        alert("Terça-feira");
+        break;
+    case 4:
+        alert("Quarta-feira");
+        break;
+    case 5:
+        alert("Quinta-feira");
+        break;
+    case 6:
+        alert("Sexta-feira");
+        break;
+    case 7:
+        alert("Sábado");
+        break;
+    default:
+        alert("Número inválido!");
+}
+
+
+let numero1 = Number(prompt("Digite o primeiro número:"));
+let numero2 = Number(prompt("Digite o segundo número:"));
+
+if (numero1 > numero2) {
+    alert("O maior número é: " + numero1);
+} else if (numero2 > numero1) {
+    alert("O maior número é: " + numero2);
+} else {
+    alert("Os números são iguais!");
+}
+
+
+let numero = Number(prompt("Digite um número:"));
+
+if (numero % 2 === 0) {
+    alert("O número é par!");
+} else {
+    alert("O número é ímpar!");
+}
+
+
+let resultado = prompt("Digite o resultado (vitória, empate ou derrota):").toLowerCase();
+
+if (resultado === "vitória") {
+    alert("Seu time ganhou 3 pontos!");
+} else if (resultado === "empate") {
+    alert("Seu time ganhou 1 ponto!");
+} else if (resultado === "derrota") {
+    alert("Seu time ganhou 0 pontos!");
+} else {
+    alert("Resultado inválido!");
+}
+
+
+
+let idade = Number(prompt("Digite a idade do nadador:"));
+
+if (idade >= 5 && idade <= 7) {
+    alert("Categoria: Infantil A");
+} else if (idade >= 8 && idade <= 10) {
+    alert("Categoria: Infantil B");
+} else if (idade >= 11 && idade <= 13) {
+    alert("Categoria: Juvenil A");
+} else if (idade >= 14 && idade <= 17) {
+    alert("Categoria: Juvenil B");
+} else if (idade >= 18) {
+    alert("Categoria: Adulto");
+} else {
+    alert("Idade fora das categorias!");
+}
+
+
+
+let angulo = Number(prompt("Digite a medida do ângulo:"));
+
+if (angulo === 0 || angulo === 180) {
+    alert("Ângulo raso");
+} else if (angulo > 0 && angulo < 90) {
+    alert("Ângulo agudo");
+} else if (angulo === 90) {
+    alert("Ângulo reto");
+} else if (angulo > 90 && angulo < 180) {
+    alert("Ângulo obtuso");
+} else if (angulo > 180 && angulo < 360) {
+    alert("Ângulo côncavo");
+} else if (angulo === 360) {
+    alert("Ângulo completo");
+} else {
+    alert("Ângulo inválido!");
+}
+
+
+
+
+let codigo = Number(prompt("Digite o código do produto:"));
+let quantidade = Number(prompt("Digite a quantidade:"));
+
+let produto;
+let preco;
+
+switch (codigo) {
+    case 200:
+        produto = "Camiseta";
+        preco = 25;
+        break;
+    case 201:
+        produto = "Calça";
+        preco = 35;
+        break;
+    case 202:
+        produto = "Jaqueta";
+        preco = 45;
+        break;
+    case 203:
+        produto = "Saia";
+        preco = 55;
+        break;
+    default:
+        alert("Código inválido!");
+}
+
+if (preco !== undefined && quantidade > 0) {
+    let total = preco * quantidade;
+
+    alert(
+        "Produto: " + produto +
+        "\nQuantidade: " + quantidade +
+        "\nValor total: R$ " + total.toFixed(2)
+    );
+}
